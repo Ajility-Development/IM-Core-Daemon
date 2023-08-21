@@ -1,6 +1,6 @@
 .idea/*
 logs/*
-data/*
+data/*.db
 venv/*
 __pycache__/*
 .env
