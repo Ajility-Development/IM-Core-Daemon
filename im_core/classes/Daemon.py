@@ -51,8 +51,9 @@ class Daemon:
                 print('Error configuring logger... does a daemon with this configuration key exist? Trying again in 5 seconds...')
                 time.sleep(5)
                 self._logger()
-        except:
+        except Exception as e:
             print('Error configuring logger... has the cloud database been initialized, and does a daemon with this configuration key exist? Trying again in 5 seconds...')
+            print(e)
             time.sleep(5)
             self._logger()
 
